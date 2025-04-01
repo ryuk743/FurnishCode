@@ -1,4 +1,4 @@
 git add .
 git commit -m "name_of_commit"
 git branch -M main
-git push -u orgin main
+git push -u origin main
