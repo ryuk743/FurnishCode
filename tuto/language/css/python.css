@@ -1082,19 +1082,110 @@ body.dark-mode .btn-outline:hover {
     }
 }
 
+/* Python Page Specific Styles */
+.code-example {
+    background-color: #f5f5f5;
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    margin: 2rem 0;
+    overflow-x: auto;
+    box-shadow: var(--box-shadow);
+    position: relative;
+}
 
+.code-example h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 
-.here {
+.code-example pre {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+}
+
+.code-example code {
+    display: block;
+    color: #333;
+    font-size: 1rem;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.resource-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: var(--dark-color);
+    transition: var(--transition);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    min-height: 120px;
+}
+
+.resource-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.resource-card span {
+    font-weight: 600;
+}
+
+.resource-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.resource-card:hover i {
+    transform: scale(1.2);
+    color: var(--accent-color);
+}
+
+/* Dark mode adjustments */
+body.dark-mode .code-example {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .code-example code {
+    color: #d4d4d4;
+}
+
+body.dark-mode .resource-card {
+    background-color: #1a237e;
+    color: #d1c4e9;
+}
+
+body.dark-mode .resource-card i {
+    color: #b39ddb;
+}
+
+.comin_soon {
     font-size: 1.25rem;
     font-weight: 800;
     color: #fff;
     text-align: center;
-    background: linear-gradient(135deg, #09ff00, #00c500);
+    background: linear-gradient(135deg, #ff0000, #c50000);
     padding: 1rem 2.5rem;
     border-radius: 50px;
-    box-shadow: 0 6px 15px rgba(16, 197, 0, 0.6),  
+    box-shadow: 0 6px 15px rgba(197, 0, 0, 0.4), 
                 0 0 0 2px #fff, 
-                0 0 0 4px #09ff00;
+                0 0 0 4px #ff0000;
     margin: 1.5rem auto;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -1109,7 +1200,7 @@ body.dark-mode .btn-outline:hover {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.here::before {
+.comin_soon::before {
     content: '';
     position: absolute;
     top: 0;
@@ -1124,7 +1215,7 @@ body.dark-mode .btn-outline:hover {
     z-index: -1;
 }
 
-.here::after {
+.comin_soon::after {
     content: '';
     position: absolute;
     top: -5px;
@@ -1138,35 +1229,35 @@ body.dark-mode .btn-outline:hover {
     pointer-events: none;
 }
 
-.here:hover {
-    background: linear-gradient(135deg, #09ff00, #00c500);
+.comin_soon:hover {
+    background: linear-gradient(135deg, #c50000, #8a0000);
     transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 12px 25px rgba(16, 197, 0, 0.6), 
+    box-shadow: 0 12px 25px rgba(197, 0, 0, 0.6), 
                 0 0 0 2px #fff, 
-                0 0 0 4px #09ff00;
+                0 0 0 4px #ff0000;
     letter-spacing: 3px;
 }
 
-.here:hover::before {
+.comin_soon:hover::before {
     left: 100%;
 }
 
-.here:active {
+.comin_soon:active {
     transform: translateY(2px) scale(0.98);
 }
 
 /* Animation du texte */
-.here span {
+.comin_soon span {
     display: inline-block;
     transition: transform 0.3s ease;
 }
 
-.here:hover span {
+.comin_soon:hover span {
     animation: textBounce 0.8s ease;
 }
 
 /* Effet de particules */
-.here .particle {
+.comin_soon .particle {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 50%;
@@ -1197,13 +1288,13 @@ body.dark-mode .btn-outline:hover {
 
 /* Version mobile */
 @media (max-width: 768px) {
-    .here {
+    .comin_soon {
         padding: 0.8rem 1.8rem;
         font-size: 1rem;
         margin: 1rem auto;
     }
     
-    .here:hover {
+    .comin_soon:hover {
         transform: translateY(-3px) scale(1.03);
     }
 }

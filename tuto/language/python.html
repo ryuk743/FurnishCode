@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre Python - CodeMaster</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/python.css">
+    <link rel="icon" href="../../assets/logo/logo_furnishcode.svg">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fab fa-python"></i> Apprendre Python avec CodeMaster</h1>
+            <p>Maîtrisez Python, l'un des langages de programmation les plus populaires et polyvalents.</p>
+            <div class="header-icons">
+                <i class="fas fa-laptop-code" title="Développement"></i>
+                <i class="fas fa-brain" title="Intelligence Artificielle"></i>
+                <i class="fas fa-chart-bar" title="Data Science"></i>
+                <i class="fas fa-robot" title="Automatisation"></i>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#intro"><i class="fas fa-info-circle"></i> Introduction</a></li>
+                <li><a href="#base"><i class="fa-solid fa-list"></i> Base</a></li>
+
+                <li><a href="#fonctions"><i class="fas fa-cogs"></i> Fonctions</a></li>
+                <li><a href="#structures"><i class="fas fa-project-diagram"></i> Structures</a></li>
+                <li><a href="#projets"><i class="fas fa-rocket"></i> Projets</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <p class="comin_soon">Cette page sera complétée dans la prochaine mise à jour</p>
+
+
+
+    <main class="container">
+        <section id="intro" class="chapter">
+            <h2><i class="fas fa-info-circle"></i> Introduction à Python</h2>
+            <p>Python est un langage de programmation interprété, haut niveau et généraliste. Sa syntaxe claire et sa
+                polyvalence en font un excellent choix pour les débutants comme pour les professionnels.</p>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-star"></i>
+                        <h3>Pourquoi Python?</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Syntaxe simple et lisible</li>
+                            <li><i class="fas fa-check"></i> Grande communauté</li>
+                            <li><i class="fas fa-check"></i> Multiples domaines d'application</li>
+                            <li><i class="fas fa-check"></i> Bibliothèques puissantes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" style="border-top-color: #3776ab;">
+                        <i class="fas fa-cubes"></i>
+                        <h3>Domaines d'application</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Développement Web (Django, Flask)</li>
+                            <li><i class="fas fa-check"></i> Science des données (Pandas, NumPy)</li>
+                            <li><i class="fas fa-check"></i> Machine Learning (TensorFlow, PyTorch)</li>
+                            <li><i class="fas fa-check"></i> Automatisation et scripts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="base" class="chapter">
+            <h2><i class="fas fa-code"></i> Syntaxe de base</h2>
+            <p>Découvrez les fondamentaux de la syntaxe Python.</p>
+
+            <div class="code-example">
+                <h3><i class="fas fa-terminal"></i> Premier programme</h3>
+                <pre><code># Ceci est un commentaire
+        print("Bonjour le monde!")  # Affiche du texte</code></pre>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-variable"></i>
+                        <h3>Variables</h3>
+                    </div>
+                    <div class="card-body">
+                        <pre><code># Déclaration de variables
+        nom = "Alice"          # Chaîne de caractères
+        age = 25               # Entier
+        taille = 1.75          # Nombre flottant
+        est_etudiant = True    # Booléen
+        
+        # Affectation multiple
+        x, y, z = 1, 2, 3
+        a = b = c = 0
+        
+        # Conversion de type
+        nombre_texte = str(42)
+        texte_nombre = int("123")
+        </code></pre>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" style="border-top-color: #ffd43b;">
+                        <i class="fas fa-calculator"></i>
+                        <h3>Opérations</h3>
+                    </div>
+                    <div class="card-body">
+                        <pre><code># Opérations de base
+        a = 10
+        b = 3
+        
+        somme = a + b       # 13
+        difference = a - b  # 7
+        produit = a * b     # 30
+        quotient = a / b    # 3.333...
+        puissance = a ** b  # 1000
+        modulo = a % b      # 1
+        
+        # Opérations sur chaînes
+        prenom = "Jean"
+        nom_complet = prenom + " Dupont"  # Concaténation
+        message = "Bonjour " * 3          # Répétition
+        </code></pre>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" style="border-top-color: #4dabf7;">
+                        <i class="fas fa-list"></i>
+                        <h3>Structures de données</h3>
+                    </div>
+                    <div class="card-body">
+                        <pre><code># Listes (mutables)
+        nombres = [1, 2, 3, 4]
+        nombres.append(5)  # Ajout élément
+        
+        # Tuples (immuables)
+        coordonnees = (10, 20)
+        
+        # Dictionnaires
+        personne = {"nom": "Alice", "age": 25}
+        
+        # Sets
+        unique = {1, 2, 2, 3}  # {1, 2, 3}
+        </code></pre>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" style="border-top-color: #f783ac;">
+                        <i class="fas fa-project-diagram"></i>
+                        <h3>Structures de contrôle</h3>
+                    </div>
+                    <div class="card-body">
+                        <pre><code># Condition if-elif-else
+        age = 18
+        if age < 18:
+            print("Mineur")
+        elif age == 18:
+            print("Majeur")
+        else:
+            print("Adulte")
+        
+        # Boucle for
+        for i in range(5):  # 0 à 4
+            print(i)
+        
+        # Boucle while
+        compteur = 0
+        while compteur < 3:
+            print(compteur)
+            compteur += 1
+        </code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-example">
+                <h3><i class="fas fa-function"></i> Fonctions</h3>
+                <pre><code># Définition de fonction
+        def saluer(nom, fois=1):
+            """Fonction qui salue une personne"""
+            for _ in range(fois):
+                print(f"Bonjour {nom}!")
+        
+        # Appel de fonction
+        saluer("Marie", 2)
+        
+        # Fonction avec retour
+        def carre(x):
+            return x ** 2
+        </code></pre>
+            </div>
+
+            <div class="code-example">
+                <h3><i class="fas fa-file-import"></i> Modules et imports</h3>
+                <pre><code># Import de module
+        import math
+        racine = math.sqrt(16)
+        
+        # Import spécifique
+        from random import randint
+        nombre_aleatoire = randint(1, 100)
+        
+        # Création de module
+        # (fichier mon_module.py)
+        # import mon_module
+        </code></pre>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header" style="border-top-color: #20c997;">
+                        <i class="fas fa-code-branch"></i>
+                        <h3>Gestion des erreurs</h3>
+                    </div>
+                    <div class="card-body">
+                        <pre><code># Try-except
+        try:
+            resultat = 10 / 0
+        except ZeroDivisionError:
+            print("Division par zéro!")
+        
+        # Gestion multiple
+        try:
+            # code potentiellement problématique
+        except (TypeError, ValueError) as e:
+            print(f"Erreur: {e}")
+        </code></pre>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" style="border-top-color: #9775fa;">
+                        <i class="fas fa-file-alt"></i>
+                        <h3>Manipulation de fichiers</h3>
+                    </div>
+                    <div class="card-body">
+                        <pre><code># Écriture
+        with open("fichier.txt", "w") as f:
+            f.write("Bonjour\nMonde")
+        
+        # Lecture
+        with open("fichier.txt", "r") as f:
+            contenu = f.read()
+            lignes = f.readlines()  # Liste des lignes
+        </code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-example">
+                <h3><i class="fas fa-list-ol"></i> Compréhensions</h3>
+                <pre><code># Liste en compréhension
+        carres = [x**2 for x in range(10)]
+        pairs = [x for x in range(20) if x % 2 == 0]
+        
+        # Dictionnaire en compréhension
+        dico = {x: x**2 for x in range(5)}
+        
+        # Set en compréhension
+        unique_letters = {c for c in 'abracadabra'}
+        </code></pre>
+            </div>
+
+            <div class="code-example">
+                <h3><i class="fas fa-lambda"></i> Fonctions lambda</h3>
+                <pre><code># Fonction anonyme
+        double = lambda x: x * 2
+        
+        # Utilisation avec map
+        nombres = [1, 2, 3]
+        doubles = list(map(lambda x: x*2, nombres))
+        
+        # Utilisation avec filter
+        pairs = list(filter(lambda x: x%2 == 0, nombres))
+        </code></pre>
+            </div>
+        </section>
+
+        <section id="fonctions" class="chapter">
+            <h2><i class="fas fa-cogs"></i> Fonctions et Modules</h2>
+            <p>Apprenez à structurer votre code avec des fonctions et à utiliser des modules.</p>
+
+            <div class="code-example">
+                <h3><i class="fas fa-function"></i> Définition de fonction</h3>
+                <pre><code>def saluer(nom):
+    """Cette fonction salue la personne passée en paramètre"""
+    return f"Bonjour, {nom}!"
+
+message = saluer("Alice")
+print(message)  # Affiche: Bonjour, Alice!</code></pre>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header" style="border-top-color: #4584b6;">
+                        <i class="fas fa-box-open"></i>
+                        <h3>Modules</h3>
+                    </div>
+                    <div class="card-body">
+                        <pre><code># Importer un module
+import math
+
+# Utiliser ses fonctions
+racine = math.sqrt(16)  # 4.0
+pi = math.pi            # 3.141592...</code></pre>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" style="border-top-color: #4b8bbe;">
+                        <i class="fas fa-random"></i>
+                        <h3>Fonctions Lambda</h3>
+                    </div>
+                    <div class="card-body">
+                        <pre><code># Fonction lambda (anonyme)
+carre = lambda x: x ** 2
+
+print(carre(5))  # Affiche: 25</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="structures" class="chapter">
+            <h2><i class="fas fa-project-diagram"></i> Structures de données</h2>
+            <p>Découvrez les principales structures de données en Python.</p>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header" style="border-top-color: #ff2d20;">
+                        <i class="fas fa-list"></i>
+                        <h3>Listes</h3>
+                    </div>
+                    <div class="card-body">
+                        <pre><code># Création d'une liste
+fruits = ["pomme", "banane", "cerise"]
+
+# Accès aux éléments
+premier = fruits[0]  # "pomme"
+
+# Ajout d'un élément
+fruits.append("orange")</code></pre>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" style="border-top-color: #3572a5;">
+                        <i class="fas fa-key"></i>
+                        <h3>Dictionnaires</h3>
+                    </div>
+                    <div class="card-body">
+                        <pre><code># Création d'un dictionnaire
+personne = {
+    "nom": "Alice",
+    "age": 25,
+    "ville": "Paris"
+}
+
+# Accès aux valeurs
+nom = personne["nom"]  # "Alice"</code></pre>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" style="border-top-color: #646464;">
+                        <i class="fas fa-brackets-curly"></i>
+                        <h3>Tuples et Sets</h3>
+                    </div>
+                    <div class="card-body">
+                        <pre><code># Tuple (immuable)
+coordonnees = (48.8566, 2.3522)
+
+# Set (collection non ordonnée)
+couleurs = {"rouge", "vert", "bleu"}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets" class="chapter">
+            <h2><i class="fas fa-rocket"></i> Projets pratiques</h2>
+            <p>Appliquez vos connaissances avec ces projets concrets.</p>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header" style="border-top-color: #ff5722;">
+                        <i class="fas fa-calculator"></i>
+                        <h3>Calculatrice</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Créez une calculatrice simple en ligne de commande.</p>
+                        <a href="#" class="btn" style="background-color: #ff5722;">Voir le tutoriel</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" style="border-top-color: #4caf50;">
+                        <i class="fas fa-tasks"></i>
+                        <h3>To-Do List</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Développez une application de liste de tâches.</p>
+                        <a href="#" class="btn" style="background-color: #4caf50;">Voir le tutoriel</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" style="border-top-color: #2196f3;">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Analyse de données</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Analysez des données avec Pandas et Matplotlib.</p>
+                        <a href="#" class="btn" style="background-color: #2196f3;">Voir le tutoriel</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="next-steps">
+                <h3><i class="fas fa-graduation-cap"></i> Pour aller plus loin</h3>
+                <div class="resources-grid">
+                    <a href="#" class="resource-card">
+                        <i class="fab fa-youtube"></i>
+                        <span>Tutoriels vidéo</span>
+                    </a>
+                    <a href="#" class="resource-card">
+                        <i class="fas fa-book"></i>
+                        <span>Documentation officielle</span>
+                    </a>
+                    <a href="#" class="resource-card">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>Exercices pratiques</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>🚀 CodeMaster - Apprendre Python Gratuitement 🚀</p>
+            <p>© 2025 Tous droits réservés</p>
+            <div class="social-links">
+                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // Dark Mode Toggle
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            const icon = document.querySelector('.dark-mode-toggle i');
+            if (document.body.classList.contains('dark-mode')) {
+                icon.classList.replace('fa-moon', 'fa-sun');
+            } else {
+                icon.classList.replace('fa-sun', 'fa-moon');
+            }
+        }
+
+        // Smooth scrolling for navigation links
+        $('nav a').on('click', function (e) {
+            if (this.hash !== '') {
+                e.preventDefault();
+                const hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - 80
+                }, 800);
+            }
+        });
+
+        // Add animation to cards when they come into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.card, .chapter').forEach(el => {
+            el.style.opacity = 0;
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+
+</html>
