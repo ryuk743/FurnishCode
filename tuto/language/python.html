@@ -4,17 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apprendre Python - CodeMaster</title>
+    <title>Guide Complet Python - CodeMaster</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/python.css">
-    <link rel="icon" href="../../assets/logo/logo_furnishcode.svg">
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body>
     <header>
         <div class="container">
-            <h1><i class="fab fa-python"></i> Apprendre Python avec CodeMaster</h1>
-            <p>Maîtrisez Python, l'un des langages de programmation les plus populaires et polyvalents.</p>
+            <h1><i class="fab fa-python"></i> Guide Complet Python avec CodeMaster</h1>
+            <p>Maîtrisez Python de A à Z avec ce guide ultra-complet couvrant tous les aspects du langage.</p>
             <div class="header-icons">
                 <i class="fas fa-laptop-code" title="Développement"></i>
                 <i class="fas fa-brain" title="Intelligence Artificielle"></i>
@@ -28,37 +27,69 @@
         <div class="container">
             <ul>
                 <li><a href="#intro"><i class="fas fa-info-circle"></i> Introduction</a></li>
-                <li><a href="#base"><i class="fa-solid fa-list"></i> Base</a></li>
-
+                <li><a href="#syntaxe"><i class="fas fa-code"></i> Syntaxe</a></li>
                 <li><a href="#fonctions"><i class="fas fa-cogs"></i> Fonctions</a></li>
                 <li><a href="#structures"><i class="fas fa-project-diagram"></i> Structures</a></li>
-                <li><a href="#projets"><i class="fas fa-rocket"></i> Projets</a></li>
+                <li><a href="#poo"><i class="fas fa-cube"></i> POO</a></li>
+                <li><a href="#avance"><i class="fas fa-rocket"></i> Avancé</a></li>
+                <li><a href="#projets"><i class="fas fa-tasks"></i> Projets</a></li>
             </ul>
         </div>
     </nav>
 
-    <p class="comin_soon">Cette page sera complétée dans la prochaine mise à jour</p>
-
-
-
     <main class="container">
         <section id="intro" class="chapter">
-            <h2><i class="fas fa-info-circle"></i> Introduction à Python</h2>
-            <p>Python est un langage de programmation interprété, haut niveau et généraliste. Sa syntaxe claire et sa
-                polyvalence en font un excellent choix pour les débutants comme pour les professionnels.</p>
-
+            <h2><i class="fas fa-info-circle"></i> Introduction Complète à Python</h2>
+            
+            <article class="detailed-content">
+                <h3>Histoire et Philosophie de Python</h3>
+                <p>Python a été créé par Guido van Rossum et publié pour la première fois en 1991. Le langage a été conçu avec une philosophie centrée sur la lisibilité du code et la productivité des développeurs. La PEP 20 (Zen de Python) résume cette philosophie avec des principes comme :</p>
+                <ul>
+                    <li>« Beau est mieux que laid »</li>
+                    <li>« Simple est mieux que complexe »</li>
+                    <li>« La lisibilité compte »</li>
+                    <li>« Explicit is better than implicit »</li>
+                </ul>
+                
+                <h3>Caractéristiques Techniques</h3>
+                <p>Python est un langage :</p>
+                <ul>
+                    <li><strong>Interprété</strong> : Le code est exécuté ligne par ligne par l'interpréteur Python</li>
+                    <li><strong>Dynamiquement typé</strong> : Les types des variables sont déterminés à l'exécution</li>
+                    <li><strong>Multi-paradigme</strong> : Supporte la programmation orientée objet, impérative et fonctionnelle</li>
+                    <li><strong>Garbage-collected</strong> : La mémoire est gérée automatiquement</li>
+                    <li><strong>Portable</strong> : Fonctionne sur tous les systèmes d'exploitation majeurs</li>
+                </ul>
+                
+                <h3>Versions de Python</h3>
+                <p>Il existe deux branches principales de Python :</p>
+                <ul>
+                    <li><strong>Python 2.x</strong> : La version historique (obsolète depuis 2020)</li>
+                    <li><strong>Python 3.x</strong> : La version actuelle avec de nombreuses améliorations</li>
+                </ul>
+                <p>Les différences majeures incluent :</p>
+                <ul>
+                    <li>La fonction print est devenue une fonction (print()) au lieu d'une instruction</li>
+                    <li>Division entière avec // au lieu de /</li>
+                    <li>Meilleure gestion des Unicode</li>
+                    <li>Syntaxe plus cohérente pour les exceptions</li>
+                </ul>
+            </article>
+            
             <div class="cards-grid">
                 <div class="card">
                     <div class="card-header">
                         <i class="fas fa-star"></i>
-                        <h3>Pourquoi Python?</h3>
+                        <h3>Avantages de Python</h3>
                     </div>
                     <div class="card-body">
                         <ul>
-                            <li><i class="fas fa-check"></i> Syntaxe simple et lisible</li>
-                            <li><i class="fas fa-check"></i> Grande communauté</li>
-                            <li><i class="fas fa-check"></i> Multiples domaines d'application</li>
-                            <li><i class="fas fa-check"></i> Bibliothèques puissantes</li>
+                            <li><i class="fas fa-check"></i> <strong>Syntaxe intuitive</strong> : Réduit la courbe d'apprentissage pour les débutants</li>
+                            <li><i class="fas fa-check"></i> <strong>Écosystème riche</strong> : Plus de 300,000 paquets sur PyPI (Python Package Index)</li>
+                            <li><i class="fas fa-check"></i> <strong>Multiplateforme</strong> : Fonctionne sur Windows, macOS, Linux, etc.</li>
+                            <li><i class="fas fa-check"></i> <strong>Communauté active</strong> : Support abondant via forums, meetups et conférences</li>
+                            <li><i class="fas fa-check"></i> <strong>Intégration facile</strong> : Interface avec C, Java, .NET et d'autres langages</li>
+                            <li><i class="fas fa-check"></i> <strong>Productivité</strong> : Moins de code pour accomplir les mêmes tâches qu'en Java ou C++</li>
                         </ul>
                     </div>
                 </div>
@@ -66,387 +97,1103 @@
                 <div class="card">
                     <div class="card-header" style="border-top-color: #3776ab;">
                         <i class="fas fa-cubes"></i>
-                        <h3>Domaines d'application</h3>
+                        <h3>Applications Professionnelles</h3>
                     </div>
                     <div class="card-body">
                         <ul>
-                            <li><i class="fas fa-check"></i> Développement Web (Django, Flask)</li>
-                            <li><i class="fas fa-check"></i> Science des données (Pandas, NumPy)</li>
-                            <li><i class="fas fa-check"></i> Machine Learning (TensorFlow, PyTorch)</li>
-                            <li><i class="fas fa-check"></i> Automatisation et scripts</li>
+                            <li><i class="fas fa-check"></i> <strong>Développement Web</strong> : Frameworks comme Django (batteries incluses), Flask (microframework), FastAPI (API modernes)</li>
+                            <li><i class="fas fa-check"></i> <strong>Data Science</strong> : Pandas (analyse de données), NumPy (calcul scientifique), Matplotlib/Seaborn (visualisation)</li>
+                            <li><i class="fas fa-check"></i> <strong>Machine Learning</strong> : TensorFlow, PyTorch, scikit-learn pour modèles prédictifs</li>
+                            <li><i class="fas fa-check"></i> <strong>Automatisation</strong> : Scripts système, bots, scraping web avec BeautifulSoup/Scrapy</li>
+                            <li><i class="fas fa-check"></i> <strong>DevOps</strong> : Automatisation avec Ansible, gestion infrastructure avec Terraform</li>
+                            <li><i class="fas fa-check"></i> <strong>Jeux</strong> : Bibliothèques comme Pygame pour prototypes et jeux 2D</li>
                         </ul>
                     </div>
                 </div>
             </div>
+            
+            <article class="detailed-content">
+                <h3>Installation et Configuration</h3>
+                <p>Pour commencer avec Python :</p>
+                <ol>
+                    <li>Télécharger la dernière version depuis python.org</li>
+                    <li>Installer en cochant "Add Python to PATH"</li>
+                    <li>Vérifier l'installation avec <code>python --version</code></li>
+                </ol>
+                
+                <h4>Environnements Virtuels</h4>
+                <p>Les environnements virtuels isolent les dépendances entre projets :</p>
+                <pre><code># Créer un environnement
+python -m venv mon_env
+
+# Activer sous Windows
+mon_env\Scripts\activate.bat
+
+# Activer sous macOS/Linux
+source mon_env/bin/activate</code></pre>
+                
+                <h4>Gestion des Paquets avec pip</h4>
+                <p>pip est le gestionnaire de paquets standard :</p>
+                <pre><code># Installer un paquet
+pip install numpy
+
+# Lister les paquets installés
+pip list
+
+# Générer un fichier de requirements
+pip freeze > requirements.txt</code></pre>
+            </article>
         </section>
 
-        <section id="base" class="chapter">
-            <h2><i class="fas fa-code"></i> Syntaxe de base</h2>
-            <p>Découvrez les fondamentaux de la syntaxe Python.</p>
-
+        <section id="syntaxe" class="chapter">
+            <h2><i class="fas fa-code"></i> Syntaxe Approfondie</h2>
+            
+            <article class="detailed-content">
+                <h3>Structure d'un Programme Python</h3>
+                <p>Un script Python typique contient :</p>
+                <ul>
+                    <li>Une ligne shebang (#!/usr/bin/env python3) pour les scripts exécutables</li>
+                    <li>Des docstrings pour documenter les modules/fonctions</li>
+                    <li>Des imports de modules</li>
+                    <li>Des définitions de fonctions/classes</li>
+                    <li>Du code exécutable (souvent dans un bloc if __name__ == "__main__")</li>
+                </ul>
+                
+                <h3>Variables et Types de Données</h3>
+                <p>Python possède plusieurs types natifs :</p>
+                <ul>
+                    <li><strong>Nombres</strong> : int, float, complex</li>
+                    <li><strong>Séquences</strong> : str, list, tuple, range</li>
+                    <li><strong>Mappings</strong> : dict</li>
+                    <li><strong>Ensembles</strong> : set, frozenset</li>
+                    <li><strong>Booléens</strong> : bool (True/False)</li>
+                    <li><strong>Binaires</strong> : bytes, bytearray, memoryview</li>
+                </ul>
+                
+                <h4>Typage Dynamique</h4>
+                <p>Les variables n'ont pas de type déclaré :</p>
+                <pre><code>x = 42          # x est un entier
+x = "hello"    # maintenant x est une chaîne
+x = [1, 2, 3]  # maintenant une liste</code></pre>
+                
+                <h4>Conversion de Types</h4>
+                <pre><code>int("42")       # Convertit en entier
+float(3)       # Convertit en flottant
+str(123)       # Convertit en chaîne
+list("abc")    # Crée une liste ['a', 'b', 'c']</code></pre>
+            </article>
+            
             <div class="code-example">
-                <h3><i class="fas fa-terminal"></i> Premier programme</h3>
-                <pre><code># Ceci est un commentaire
-        print("Bonjour le monde!")  # Affiche du texte</code></pre>
-            </div>
+                <h3><i class="fas fa-terminal"></i> Opérations de Base</h3>
+                <pre><code># Opérations arithmétiques
+5 + 2   # Addition (7)
+5 - 2   # Soustraction (3)
+5 * 2   # Multiplication (10)
+5 / 2   # Division (2.5)
+5 // 2  # Division entière (2)
+5 % 2   # Modulo (1)
+5 ** 2  # Exponentiation (25)
 
+# Opérations de comparaison
+5 == 5  # Égalité (True)
+5 != 3  # Inégalité (True)
+5 > 3   # Supérieur (True)
+5 <= 5  # Inférieur ou égal (True)
+
+# Opérations logiques
+True and False  # ET (False)
+True or False   # OU (True)
+not True        # NON (False)</code></pre>
+            </div>
+            
+            <article class="detailed-content">
+                <h3>Structures de Contrôle</h3>
+                
+                <h4>Conditionnelles</h4>
+                <pre><code># if/elif/else
+age = 18
+if age < 12:
+    print("Enfant")
+elif age < 18:
+    print("Adolescent")
+else:
+    print("Adulte")
+
+# Opérateur ternaire
+status = "Majeur" if age >= 18 else "Mineur"</code></pre>
+                
+                <h4>Boucles</h4>
+                <pre><code># Boucle while
+compteur = 0
+while compteur < 5:
+    print(compteur)
+    compteur += 1  # Équivalent à compteur = compteur + 1
+
+# Boucle for avec range
+for i in range(5):  # 0 à 4
+    print(i)
+
+# Boucle for avec séquence
+fruits = ["pomme", "banane", "cerise"]
+for fruit in fruits:
+    print(fruit)</code></pre>
+                
+                <h4>Contrôle de Boucle</h4>
+                <pre><code># break - sort de la boucle
+for i in range(10):
+    if i == 5:
+        break
+    print(i)  # Affiche 0 à 4
+
+# continue - passe à l'itération suivante
+for i in range(10):
+    if i % 2 == 0:
+        continue
+    print(i)  # Affiche les nombres impairs
+
+# else avec les boucles (exécuté si pas de break)
+for i in range(3):
+    print(i)
+else:
+    print("Boucle terminée")</code></pre>
+            </article>
+            
             <div class="cards-grid">
                 <div class="card">
                     <div class="card-header">
                         <i class="fas fa-variable"></i>
-                        <h3>Variables</h3>
+                        <h3>Portée des Variables</h3>
                     </div>
                     <div class="card-body">
-                        <pre><code># Déclaration de variables
-        nom = "Alice"          # Chaîne de caractères
-        age = 25               # Entier
-        taille = 1.75          # Nombre flottant
-        est_etudiant = True    # Booléen
-        
-        # Affectation multiple
-        x, y, z = 1, 2, 3
-        a = b = c = 0
-        
-        # Conversion de type
-        nombre_texte = str(42)
-        texte_nombre = int("123")
-        </code></pre>
+                        <p>Python a 4 portées de variables :</p>
+                        <ol>
+                            <li><strong>Locale</strong> : Dans une fonction</li>
+                            <li><strong>Enclosing</strong> : Dans une fonction englobante</li>
+                            <li><strong>Globale</strong> : Au niveau du module</li>
+                            <li><strong>Built-in</strong> : Noms prédéfinis (comme print)</li>
+                        </ol>
+                        <pre><code>x = "globale"
+
+def fonction():
+    x = "locale"
+    print(x)  # "locale"
+
+fonction()
+print(x)  # "globale"</code></pre>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-header" style="border-top-color: #ffd43b;">
                         <i class="fas fa-calculator"></i>
-                        <h3>Opérations</h3>
+                        <h3>Opérations Avancées</h3>
                     </div>
                     <div class="card-body">
-                        <pre><code># Opérations de base
-        a = 10
-        b = 3
-        
-        somme = a + b       # 13
-        difference = a - b  # 7
-        produit = a * b     # 30
-        quotient = a / b    # 3.333...
-        puissance = a ** b  # 1000
-        modulo = a % b      # 1
-        
-        # Opérations sur chaînes
-        prenom = "Jean"
-        nom_complet = prenom + " Dupont"  # Concaténation
-        message = "Bonjour " * 3          # Répétition
-        </code></pre>
+                        <pre><code># Opérations sur les bits
+5 & 3   # ET binaire (1)
+5 | 3   # OU binaire (7)
+5 ^ 3   # XOR binaire (6)
+~5      # Complément (-6)
+5 << 1  # Décalage gauche (10)
+5 >> 1  # Décalage droit (2)
+
+# Affectation combinée
+x = 5
+x += 3  # Équivalent à x = x + 3
+
+# Chaînage de comparaisons
+1 < 2 < 3  # True
+1 < 3 < 2  # False</code></pre>
                     </div>
                 </div>
-
-                <div class="card">
-                    <div class="card-header" style="border-top-color: #4dabf7;">
-                        <i class="fas fa-list"></i>
-                        <h3>Structures de données</h3>
-                    </div>
-                    <div class="card-body">
-                        <pre><code># Listes (mutables)
-        nombres = [1, 2, 3, 4]
-        nombres.append(5)  # Ajout élément
-        
-        # Tuples (immuables)
-        coordonnees = (10, 20)
-        
-        # Dictionnaires
-        personne = {"nom": "Alice", "age": 25}
-        
-        # Sets
-        unique = {1, 2, 2, 3}  # {1, 2, 3}
-        </code></pre>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header" style="border-top-color: #f783ac;">
-                        <i class="fas fa-project-diagram"></i>
-                        <h3>Structures de contrôle</h3>
-                    </div>
-                    <div class="card-body">
-                        <pre><code># Condition if-elif-else
-        age = 18
-        if age < 18:
-            print("Mineur")
-        elif age == 18:
-            print("Majeur")
-        else:
-            print("Adulte")
-        
-        # Boucle for
-        for i in range(5):  # 0 à 4
-            print(i)
-        
-        # Boucle while
-        compteur = 0
-        while compteur < 3:
-            print(compteur)
-            compteur += 1
-        </code></pre>
-                    </div>
-                </div>
-            </div>
-
-            <div class="code-example">
-                <h3><i class="fas fa-function"></i> Fonctions</h3>
-                <pre><code># Définition de fonction
-        def saluer(nom, fois=1):
-            """Fonction qui salue une personne"""
-            for _ in range(fois):
-                print(f"Bonjour {nom}!")
-        
-        # Appel de fonction
-        saluer("Marie", 2)
-        
-        # Fonction avec retour
-        def carre(x):
-            return x ** 2
-        </code></pre>
-            </div>
-
-            <div class="code-example">
-                <h3><i class="fas fa-file-import"></i> Modules et imports</h3>
-                <pre><code># Import de module
-        import math
-        racine = math.sqrt(16)
-        
-        # Import spécifique
-        from random import randint
-        nombre_aleatoire = randint(1, 100)
-        
-        # Création de module
-        # (fichier mon_module.py)
-        # import mon_module
-        </code></pre>
-            </div>
-
-            <div class="cards-grid">
-                <div class="card">
-                    <div class="card-header" style="border-top-color: #20c997;">
-                        <i class="fas fa-code-branch"></i>
-                        <h3>Gestion des erreurs</h3>
-                    </div>
-                    <div class="card-body">
-                        <pre><code># Try-except
-        try:
-            resultat = 10 / 0
-        except ZeroDivisionError:
-            print("Division par zéro!")
-        
-        # Gestion multiple
-        try:
-            # code potentiellement problématique
-        except (TypeError, ValueError) as e:
-            print(f"Erreur: {e}")
-        </code></pre>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header" style="border-top-color: #9775fa;">
-                        <i class="fas fa-file-alt"></i>
-                        <h3>Manipulation de fichiers</h3>
-                    </div>
-                    <div class="card-body">
-                        <pre><code># Écriture
-        with open("fichier.txt", "w") as f:
-            f.write("Bonjour\nMonde")
-        
-        # Lecture
-        with open("fichier.txt", "r") as f:
-            contenu = f.read()
-            lignes = f.readlines()  # Liste des lignes
-        </code></pre>
-                    </div>
-                </div>
-            </div>
-
-            <div class="code-example">
-                <h3><i class="fas fa-list-ol"></i> Compréhensions</h3>
-                <pre><code># Liste en compréhension
-        carres = [x**2 for x in range(10)]
-        pairs = [x for x in range(20) if x % 2 == 0]
-        
-        # Dictionnaire en compréhension
-        dico = {x: x**2 for x in range(5)}
-        
-        # Set en compréhension
-        unique_letters = {c for c in 'abracadabra'}
-        </code></pre>
-            </div>
-
-            <div class="code-example">
-                <h3><i class="fas fa-lambda"></i> Fonctions lambda</h3>
-                <pre><code># Fonction anonyme
-        double = lambda x: x * 2
-        
-        # Utilisation avec map
-        nombres = [1, 2, 3]
-        doubles = list(map(lambda x: x*2, nombres))
-        
-        # Utilisation avec filter
-        pairs = list(filter(lambda x: x%2 == 0, nombres))
-        </code></pre>
             </div>
         </section>
 
         <section id="fonctions" class="chapter">
-            <h2><i class="fas fa-cogs"></i> Fonctions et Modules</h2>
-            <p>Apprenez à structurer votre code avec des fonctions et à utiliser des modules.</p>
+            <h2><i class="fas fa-cogs"></i> Fonctions Approfondies</h2>
+            
+            <article class="detailed-content">
+                <h3>Définition et Appel</h3>
+                <p>Les fonctions permettent d'organiser le code en blocs réutilisables :</p>
+                <pre><code>def saluer(nom, message="Bonjour"):
+    """Affiche un message de salutation"""
+    return f"{message}, {nom}!"
 
+# Appels
+saluer("Alice")  # "Bonjour, Alice!"
+saluer("Bob", "Salut")  # "Salut, Bob!"</code></pre>
+                
+                <h4>Arguments et Paramètres</h4>
+                <p>Python supporte plusieurs types d'arguments :</p>
+                <ul>
+                    <li><strong>Positionnels</strong> : Correspondance par position</li>
+                    <li><strong>Nommés</strong> : Spécifiés avec nom=value</li>
+                    <li><strong>Par défaut</strong> : Valeurs prédéfinies</li>
+                    <li><strong>Variables</strong> : *args et **kwargs</li>
+                </ul>
+                
+                <pre><code># *args pour arguments variables positionnels
+def somme(*nombres):
+    return sum(nombres)
+
+somme(1, 2, 3)  # 6
+
+# **kwargs pour arguments nommés variables
+def afficher_config(**options):
+    for cle, valeur in options.items():
+        print(f"{cle}: {valeur}")
+
+afficher_config(lang="fr", theme="sombre")</code></pre>
+            </article>
+            
             <div class="code-example">
-                <h3><i class="fas fa-function"></i> Définition de fonction</h3>
-                <pre><code>def saluer(nom):
-    """Cette fonction salue la personne passée en paramètre"""
-    return f"Bonjour, {nom}!"
+                <h3><i class="fas fa-function"></i> Fonctions Lambda</h3>
+                <pre><code># Fonction lambda simple
+carre = lambda x: x * x
+carre(5)  # 25
 
-message = saluer("Alice")
-print(message)  # Affiche: Bonjour, Alice!</code></pre>
+# Utilisation avec map()
+nombres = [1, 2, 3, 4]
+carres = list(map(lambda x: x**2, nombres))  # [1, 4, 9, 16]
+
+# Utilisation avec filter()
+pairs = list(filter(lambda x: x % 2 == 0, nombres))  # [2, 4]
+
+# Utilisation avec sorted()
+etudiants = [("Alice", 20), ("Bob", 18), ("Charlie", 22)]
+tri_par_age = sorted(etudiants, key=lambda x: x[1])</code></pre>
             </div>
+            
+            <article class="detailed-content">
+                <h3>Portée et Closures</h3>
+                <p>Les fonctions peuvent capturer des variables de leur environnement :</p>
+                <pre><code>def crease_multiplicateur(facteur):
+    def multiplicateur(x):
+        return x * facteur
+    return multiplicateur
 
+double = crease_multiplicateur(2)
+triple = crease_multiplicateur(3)
+
+double(5)  # 10
+triple(5)  # 15</code></pre>
+                
+                <h3>Décorateurs</h3>
+                <p>Les décorateurs modifient le comportement des fonctions :</p>
+                <pre><code>def chronometre(fonction):
+    def wrapper(*args, **kwargs):
+        debut = time.time()
+        resultat = fonction(*args, **kwargs)
+        fin = time.time()
+        print(f"Temps d'exécution: {fin - debut} secondes")
+        return resultat
+    return wrapper
+
+@chronometre
+def calcul_long():
+    time.sleep(2)
+
+calcul_long()  # Affiche le temps d'exécution</code></pre>
+            </article>
+            
             <div class="cards-grid">
                 <div class="card">
                     <div class="card-header" style="border-top-color: #4584b6;">
                         <i class="fas fa-box-open"></i>
-                        <h3>Modules</h3>
+                        <h3>Modules et Packages</h3>
                     </div>
                     <div class="card-body">
-                        <pre><code># Importer un module
+                        <p>Structure d'un package Python :</p>
+                        <pre>mon_package/
+    __init__.py
+    module1.py
+    module2.py
+    sous_package/
+        __init__.py
+        module3.py</pre>
+                        
+                        <p>Importations :</p>
+                        <pre><code># Import simple
 import math
+math.sqrt(16)
 
-# Utiliser ses fonctions
-racine = math.sqrt(16)  # 4.0
-pi = math.pi            # 3.141592...</code></pre>
+# Import avec alias
+import numpy as np
+np.array([1, 2, 3])
+
+# Import spécifique
+from math import sqrt, pi
+sqrt(9)
+
+# Import de tout (non recommandé)
+from math import *</code></pre>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-header" style="border-top-color: #4b8bbe;">
                         <i class="fas fa-random"></i>
-                        <h3>Fonctions Lambda</h3>
+                        <h3>Fonctions Built-in Utiles</h3>
                     </div>
                     <div class="card-body">
-                        <pre><code># Fonction lambda (anonyme)
-carre = lambda x: x ** 2
+                        <pre><code># Type et conversion
+type(42)        # <class 'int'>
+isinstance(42, int)  # True
+callable(len)   # True
 
-print(carre(5))  # Affiche: 25</code></pre>
+# Mathématiques
+abs(-5)         # 5
+round(3.14159, 2)  # 3.14
+min([1, 2, 3])  # 1
+max([1, 2, 3])  # 3
+sum([1, 2, 3])  # 6
+
+# Itérables
+len("hello")    # 5
+range(5)        # 0,1,2,3,4
+enumerate(["a", "b"])  # (0,'a'), (1,'b')
+zip([1, 2], ["a", "b"])  # (1,'a'), (2,'b')
+
+# Entrée/Sortie
+input("Nom? ")  # Lit l'entrée
+print("Hello")  # Affiche à l'écran
+open("fichier.txt")  # Ouvre un fichier</code></pre>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="structures" class="chapter">
-            <h2><i class="fas fa-project-diagram"></i> Structures de données</h2>
-            <p>Découvrez les principales structures de données en Python.</p>
+            <h2><i class="fas fa-project-diagram"></i> Structures de Données Avancées</h2>
+            
+            <article class="detailed-content">
+                <h3>Listes en Profondeur</h3>
+                <p>Les listes sont des séquences mutables :</p>
+                <pre><code># Création
+nombres = [1, 2, 3]
+melange = ["a", 1, True, [1, 2]]
 
+# Accès
+premier = nombres[0]     # 1
+dernier = nombres[-1]    # 3
+sous_liste = nombres[1:3]  # [2, 3] (slice)
+
+# Modification
+nombres[0] = 10         # [10, 2, 3]
+nombres.append(4)       # [10, 2, 3, 4]
+nombres.insert(1, 5)    # [10, 5, 2, 3, 4]
+nombres.extend([6, 7])  # [10, 5, 2, 3, 4, 6, 7]
+
+# Suppression
+del nombres[0]          # [5, 2, 3, 4, 6, 7]
+nombres.pop()           # Retourne 7, liste: [5, 2, 3, 4, 6]
+nombres.remove(2)       # [5, 3, 4, 6]</code></pre>
+                
+                <h4>Méthodes Utiles</h4>
+                <pre><code>nombres = [3, 1, 4, 2]
+nombres.sort()          # [1, 2, 3, 4]
+nombres.reverse()       # [4, 3, 2, 1]
+copie = nombres.copy()  # Copie superficielle
+2 in nombres           # True
+nombres.index(3)       # 1
+nombres.count(2)       # 1</code></pre>
+                
+                <h4>List Comprehensions</h4>
+                <p>Syntaxe concise pour créer des listes :</p>
+                <pre><code># Version classique
+carres = []
+for x in range(5):
+    carres.append(x**2)
+
+# Version list comprehension
+carres = [x**2 for x in range(5)]
+
+# Avec condition
+pairs = [x for x in range(10) if x % 2 == 0]
+
+# Imbriquée
+matrice = [[i*j for j in range(3)] for i in range(3)]</code></pre>
+            </article>
+            
+            <div class="code-example">
+                <h3><i class="fas fa-key"></i> Dictionnaires Complets</h3>
+                <pre><code># Création
+personne = {"nom": "Alice", "age": 25}
+vide = dict()
+
+# Accès
+nom = personne["nom"]        # "Alice"
+age = personne.get("age")    # 25
+ville = personne.get("ville", "Paris")  # Valeur par défaut
+
+# Modification
+personne["age"] = 26
+personne["ville"] = "Lyon"   # Ajoute une nouvelle clé
+personne.update({"age": 27, "metier": "dev"})
+
+# Suppression
+del personne["metier"]
+age = personne.pop("age")    # Retourne et supprime
+personne.clear()             # Vide le dictionnaire
+
+# Méthodes
+cles = personne.keys()       # Vue des clés
+valeurs = personne.values() # Vue des valeurs
+items = personne.items()    # Vue des paires (clé, valeur)
+
+# Dictionary comprehension
+carres = {x: x**2 for x in range(5)}</code></pre>
+            </div>
+            
+            <article class="detailed-content">
+                <h3>Tuples et Sets</h3>
+                
+                <h4>Tuples</h4>
+                <p>Séquences immuables :</p>
+                <pre><code># Création
+point = (10, 20)
+singleton = (42,)  # Notez la virgule
+vide = tuple()
+
+# Accès
+x = point[0]       # 10
+y = point[1]       # 20
+
+# Déballage
+x, y = point       # x=10, y=20
+
+# Méthodes
+index = point.index(20)  # 1
+count = point.count(10)  # 1</code></pre>
+                
+                <h4>Sets</h4>
+                <p>Collections non ordonnées d'éléments uniques :</p>
+                <pre><code># Création
+couleurs = {"rouge", "vert", "bleu"}
+vide = set()  # {} crée un dictionnaire
+
+# Opérations
+couleurs.add("jaune")
+couleurs.remove("rouge")  # Lève une erreur si absent
+couleurs.discard("rouge") # Ne lève pas d'erreur
+
+# Opérations ensemblistes
+a = {1, 2, 3}
+b = {3, 4, 5}
+
+a | b  # Union {1, 2, 3, 4, 5}
+a & b  # Intersection {3}
+a - b  # Différence {1, 2}
+a ^ b  # Différence symétrique {1, 2, 4, 5}</code></pre>
+            </article>
+            
             <div class="cards-grid">
                 <div class="card">
                     <div class="card-header" style="border-top-color: #ff2d20;">
                         <i class="fas fa-list"></i>
-                        <h3>Listes</h3>
+                        <h3>Collections Spécialisées</h3>
                     </div>
                     <div class="card-body">
-                        <pre><code># Création d'une liste
-fruits = ["pomme", "banane", "cerise"]
+                        <p>Le module <code>collections</code> offre des structures avancées :</p>
+                        <pre><code>from collections import defaultdict, Counter, deque
 
-# Accès aux éléments
-premier = fruits[0]  # "pomme"
+# defaultdict - dictionnaire avec valeur par défaut
+d = defaultdict(int)
+d["a"] += 1  # Pas besoin d'initialiser
 
-# Ajout d'un élément
-fruits.append("orange")</code></pre>
+# Counter - compte les occurrences
+compteur = Counter("abracadabra")
+print(compteur)  # Counter({'a': 5, 'b': 2, 'r': 2, 'c': 1, 'd': 1})
+
+# deque - liste optimisée pour les extrémités
+file = deque([1, 2, 3])
+file.append(4)    # Ajoute à droite
+file.popleft()    # Retire à gauche (1)</code></pre>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-header" style="border-top-color: #3572a5;">
-                        <i class="fas fa-key"></i>
-                        <h3>Dictionnaires</h3>
+                        <i class="fas fa-stream"></i>
+                        <h3>Itérateurs et Générateurs</h3>
                     </div>
                     <div class="card-body">
-                        <pre><code># Création d'un dictionnaire
-personne = {
-    "nom": "Alice",
-    "age": 25,
-    "ville": "Paris"
-}
+                        <pre><code># Itérateur
+ma_liste = [1, 2, 3]
+iterateur = iter(ma_liste)
+next(iterateur)  # 1
+next(iterateur)  # 2
 
-# Accès aux valeurs
-nom = personne["nom"]  # "Alice"</code></pre>
+# Générateur (fonction)
+def carres(n):
+    for i in range(n):
+        yield i**2
+
+for x in carres(5):
+    print(x)  # 0, 1, 4, 9, 16
+
+# Expression de générateur
+gen = (x**2 for x in range(5))</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="poo" class="chapter">
+            <h2><i class="fas fa-cube"></i> Programmation Orientée Objet</h2>
+            
+            <article class="detailed-content">
+                <h3>Classes et Objets</h3>
+                <p>Les classes sont des modèles pour créer des objets :</p>
+                <pre><code>class Personne:
+    # Constructeur
+    def __init__(self, nom, age):
+        self.nom = nom    # Attribut d'instance
+        self.age = age
+    
+    # Méthode d'instance
+    def saluer(self):
+        return f"Bonjour, je m'appelle {self.nom}"
+
+# Instanciation
+alice = Personne("Alice", 25)
+message = alice.saluer()  # "Bonjour, je m'appelle Alice"</code></pre>
+                
+                <h4>Terminologie POO</h4>
+                <ul>
+                    <li><strong>Classe</strong> : Modèle pour créer des objets</li>
+                    <li><strong>Objet</strong> : Instance d'une classe</li>
+                    <li><strong>Attribut</strong> : Variable associée à un objet</li>
+                    <li><strong>Méthode</strong> : Fonction associée à un objet</li>
+                    <li><strong>self</strong> : Référence à l'instance courante</li>
+                </ul>
+            </article>
+            
+            <div class="code-example">
+                <h3><i class="fas fa-project-diagram"></i> Héritage et Polymorphisme</h3>
+                <pre><code>class Animal:
+    def __init__(self, nom):
+        self.nom = nom
+    
+    def parler(self):
+        raise NotImplementedError("Méthode abstraite")
+
+class Chien(Animal):
+    def parler(self):
+        return "Woof!"
+
+class Chat(Animal):
+    def parler(self):
+        return "Miaou!"
+
+animaux = [Chien("Rex"), Chat("Félix")]
+for animal in animaux:
+    print(f"{animal.nom} dit {animal.parler()}")
+
+# Rex dit Woof!
+# Félix dit Miaou!</code></pre>
+            </div>
+            
+            <article class="detailed-content">
+                <h3>Concepts Avancés de POO</h3>
+                
+                <h4>Méthodes Spéciales</h4>
+                <pre><code>class Vecteur:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+    
+    # Surcharge d'opérateur
+    def __add__(self, autre):
+        return Vecteur(self.x + autre.x, self.y + autre.y)
+    
+    # Représentation texte
+    def __str__(self):
+        return f"Vecteur({self.x}, {self.y})"
+
+v1 = Vecteur(2, 4)
+v2 = Vecteur(3, 1)
+v3 = v1 + v2  # Utilise __add__
+print(v3)     # Utilise __str__ => "Vecteur(5, 5)"</code></pre>
+                
+                <h4>Propriétés</h4>
+                <pre><code>class Rectangle:
+    def __init__(self, largeur, hauteur):
+        self._largeur = largeur
+        self._hauteur = hauteur
+    
+    @property
+    def largeur(self):
+        return self._largeur
+    
+    @largeur.setter
+    def largeur(self, valeur):
+        if valeur <= 0:
+            raise ValueError("La largeur doit être positive")
+        self._largeur = valeur
+    
+    @property
+    def aire(self):
+        return self._largeur * self._hauteur
+
+rect = Rectangle(3, 4)
+rect.largeur = 5  # Utilise le setter
+print(rect.aire)  # 20</code></pre>
+            </article>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header" style="border-top-color: #4584b6;">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Encapsulation</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Python n'a pas de vrai encapsulation mais utilise des conventions :</p>
+                        <ul>
+                            <li><strong>_attribut</strong> : Protégé (convention)</li>
+                            <li><strong>__attribut</strong> : Privé (name mangling)</li>
+                            <li><strong>attribut</strong> : Public</li>
+                        </ul>
+                        <pre><code>class Test:
+    def __init__(self):
+        self.public = 1
+        self._protege = 2
+        self.__prive = 3
+
+t = Test()
+print(t.public)    # OK
+print(t._protege)  # Possible mais déconseillé
+print(t.__prive)   # Erreur (name mangling)
+print(t._Test__prive)  # Accès forcé (non recommandé)</code></pre>
                     </div>
                 </div>
 
                 <div class="card">
-                    <div class="card-header" style="border-top-color: #646464;">
-                        <i class="fas fa-brackets-curly"></i>
-                        <h3>Tuples et Sets</h3>
+                    <div class="card-header" style="border-top-color: #4b8bbe;">
+                        <i class="fas fa-random"></i>
+                        <h3>Classes Abstraites</h3>
                     </div>
                     <div class="card-body">
-                        <pre><code># Tuple (immuable)
-coordonnees = (48.8566, 2.3522)
+                        <pre><code>from abc import ABC, abstractmethod
 
-# Set (collection non ordonnée)
-couleurs = {"rouge", "vert", "bleu"}</code></pre>
+class Forme(ABC):
+    @abstractmethod
+    def aire(self):
+        pass
+    
+    @abstractmethod
+    def perimetre(self):
+        pass
+
+class Carre(Forme):
+    def __init__(self, cote):
+        self.cote = cote
+    
+    def aire(self):
+        return self.cote ** 2
+    
+    def perimetre(self):
+        return 4 * self.cote
+
+# forme = Forme()  # Erreur: classe abstraite
+carre = Carre(5)   # OK</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="avance" class="chapter">
+            <h2><i class="fas fa-rocket"></i> Techniques Avancées</h2>
+            
+            <article class="detailed-content">
+                <h3>Gestion des Fichiers</h3>
+                <p>Python offre plusieurs méthodes pour travailler avec les fichiers :</p>
+                <pre><code># Méthode classique (nécessite de fermer manuellement)
+f = open("fichier.txt", "r")  # 'r' pour lire (défaut)
+contenu = f.read()
+f.close()
+
+# Avec gestion de contexte (recommandé)
+with open("fichier.txt", "w") as f:  # 'w' pour écrire
+    f.write("Nouveau contenu")
+
+# Modes d'ouverture
+# 'r' - lecture (défaut)
+# 'w' - écriture (écrase)
+# 'a' - ajout à la fin
+# 'x' - création exclusive
+# 'b' - mode binaire
+# 't' - mode texte (défaut)
+# '+' - lecture et écriture</code></pre>
+                
+                <h4>Méthodes Utiles</h4>
+                <pre><code>with open("fichier.txt") as f:
+    ligne = f.readline()  # Lit une ligne
+    lignes = f.readlines() # Liste de toutes les lignes
+    
+    # Itération ligne par ligne (mémoire efficace)
+    for ligne in f:
+        print(ligne.strip())  # strip() enlève les sauts de ligne</code></pre>
+                
+                <h4>Fichiers JSON</h4>
+                <pre><code>import json
+
+# Écriture
+data = {"nom": "Alice", "age": 25}
+with open("data.json", "w") as f:
+    json.dump(data, f)
+
+# Lecture
+with open("data.json") as f:
+    data = json.load(f)
+    print(data["nom"])  # "Alice"</code></pre>
+            </article>
+            
+            <div class="code-example">
+                <h3><i class="fas fa-bug"></i> Gestion des Exceptions</h3>
+                <pre><code>try:
+    # Code susceptible de lever une exception
+    resultat = 10 / 0
+except ZeroDivisionError:
+    print("Division par zéro impossible")
+except (TypeError, ValueError) as e:
+    print(f"Erreur de type ou valeur: {e}")
+else:
+    print("Aucune exception levée")
+finally:
+    print("Exécuté dans tous les cas")
+
+# Lever une exception
+if age < 0:
+    raise ValueError("L'âge ne peut pas être négatif")
+
+# Exceptions personnalisées
+class MonErreur(Exception):
+    pass</code></pre>
+            </div>
+            
+            <article class="detailed-content">
+                <h3>Programmation Fonctionnelle</h3>
+                <p>Python supporte plusieurs concepts de programmation fonctionnelle :</p>
+                
+                <h4>Fonctions d'Ordre Supérieur</h4>
+                <pre><code>def appliquer(fonction, valeur):
+    return fonction(valeur)
+
+def carre(x):
+    return x * x
+
+appliquer(carre, 5)  # 25</code></pre>
+                
+                <h4>Fonctions Map, Filter, Reduce</h4>
+                <pre><code>from functools import reduce
+
+nombres = [1, 2, 3, 4, 5]
+
+# Map: applique une fonction à chaque élément
+carres = list(map(lambda x: x**2, nombres))  # [1, 4, 9, 16, 25]
+
+# Filter: filtre selon une condition
+pairs = list(filter(lambda x: x % 2 == 0, nombres))  # [2, 4]
+
+# Reduce: combine les éléments
+somme = reduce(lambda x, y: x + y, nombres)  # 15</code></pre>
+                
+                <h4>Functools</h4>
+                <pre><code>from functools import partial, lru_cache
+
+# Partial: application partielle de fonction
+def puissance(x, y):
+    return x ** y
+
+carre = partial(puissance, y=2)
+carre(5)  # 25
+
+# LRU Cache: mémoïsation
+@lru_cache(maxsize=32)
+def fib(n):
+    if n < 2:
+        return n
+    return fib(n-1) + fib(n-2)</code></pre>
+            </article>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header" style="border-top-color: #ff5722;">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Concurrence et Parallélisme</h3>
+                    </div>
+                    <div class="card-body">
+                        <pre><code># Threading
+import threading
+
+def tache(nom):
+    print(f"Tâche {nom} en cours")
+
+threads = []
+for i in range(3):
+    t = threading.Thread(target=tache, args=(i,))
+    threads.append(t)
+    t.start()
+
+for t in threads:
+    t.join()
+
+# Multiprocessing
+from multiprocessing import Process
+
+def carre(x):
+    return x * x
+
+if __name__ == "__main__":
+    with Pool(4) as p:
+        resultats = p.map(carre, range(10))</code></pre>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" style="border-top-color: #4caf50;">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Async/Await</h3>
+                    </div>
+                    <div class="card-body">
+                        <pre><code>import asyncio
+
+async def tache_longue(nom, duree):
+    print(f"Début {nom}")
+    await asyncio.sleep(duree)
+    print(f"Fin {nom}")
+
+async def main():
+    # Exécution séquentielle
+    await tache_longue("A", 2)
+    await tache_longue("B", 1)
+    
+    # Exécution concurrente
+    await asyncio.gather(
+        tache_longue("C", 2),
+        tache_longue("D", 1)
+    )
+
+asyncio.run(main())</code></pre>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="projets" class="chapter">
-            <h2><i class="fas fa-rocket"></i> Projets pratiques</h2>
-            <p>Appliquez vos connaissances avec ces projets concrets.</p>
+            <h2><i class="fas fa-tasks"></i> Projets Complets</h2>
+            
+            <article class="detailed-content">
+                <h3>Calculatrice Avancée</h3>
+                <p>Créez une calculatrice avec interface graphique en Tkinter :</p>
+                <pre><code>import tkinter as tk
 
+class Calculatrice:
+    def __init__(self, master):
+        self.master = master
+        master.title("Calculatrice")
+        
+        self.ecran = tk.Entry(master, width=20, font=('Arial', 16))
+        self.ecran.grid(row=0, column=0, columnspan=4)
+        
+        boutons = [
+            '7', '8', '9', '/',
+            '4', '5', '6', '*',
+            '1', '2', '3', '-',
+            '0', 'C', '=', '+'
+        ]
+        
+        for i, texte in enumerate(boutons):
+            btn = tk.Button(master, text=texte, width=5, height=2,
+                          command=lambda t=texte: self.cliquer(t))
+            btn.grid(row=1 + i//4, column=i%4)
+    
+    def cliquer(self, texte):
+        if texte == 'C':
+            self.ecran.delete(0, tk.END)
+        elif texte == '=':
+            try:
+                resultat = eval(self.ecran.get())
+                self.ecran.delete(0, tk.END)
+                self.ecran.insert(0, str(resultat))
+            except:
+                self.ecran.delete(0, tk.END)
+                self.ecran.insert(0, "Erreur")
+        else:
+            self.ecran.insert(tk.END, texte)
+
+root = tk.Tk()
+calc = Calculatrice(root)
+root.mainloop()</code></pre>
+            </article>
+            
+            <div class="code-example">
+                <h3><i class="fas fa-tasks"></i> To-Do List avec Base de Données</h3>
+                <pre><code>import sqlite3
+from flask import Flask, render_template, request, redirect, url_for
+
+app = Flask(__name__)
+
+# Initialisation de la base de données
+def init_db():
+    conn = sqlite3.connect('todo.db')
+    c = conn.cursor()
+    c.execute('''CREATE TABLE IF NOT EXISTS tasks
+                 (id INTEGER PRIMARY KEY AUTOINCREMENT,
+                  description TEXT NOT NULL,
+                  done BOOLEAN NOT NULL DEFAULT 0)''')
+    conn.commit()
+    conn.close()
+
+@app.route('/')
+def index():
+    conn = sqlite3.connect('todo.db')
+    c = conn.cursor()
+    c.execute('SELECT * FROM tasks ORDER BY id DESC')
+    tasks = c.fetchall()
+    conn.close()
+    return render_template('index.html', tasks=tasks)
+
+@app.route('/add', methods=['POST'])
+def add():
+    description = request.form['description']
+    conn = sqlite3.connect('todo.db')
+    c = conn.cursor()
+    c.execute('INSERT INTO tasks (description) VALUES (?)', (description,))
+    conn.commit()
+    conn.close()
+    return redirect(url_for('index'))
+
+@app.route('/delete/<int:task_id>')
+def delete(task_id):
+    conn = sqlite3.connect('todo.db')
+    c = conn.cursor()
+    c.execute('DELETE FROM tasks WHERE id = ?', (task_id,))
+    conn.commit()
+    conn.close()
+    return redirect(url_for('index'))
+
+if __name__ == '__main__':
+    init_db()
+    app.run(debug=True)</code></pre>
+            </div>
+            
+            <article class="detailed-content">
+                <h3>Analyse de Données avec Pandas</h3>
+                <p>Analyse exploratoire d'un dataset de films :</p>
+                <pre><code>import pandas as pd
+import matplotlib.pyplot as plt
+
+# Chargement des données
+films = pd.read_csv('movies.csv')
+
+# Exploration initiale
+print(films.head())  # Premières lignes
+print(films.info())  # Informations sur les colonnes
+print(films.describe())  # Statistiques descriptives
+
+# Nettoyage des données
+films = films.dropna()  # Supprime les lignes avec valeurs manquantes
+films['budget'] = films['budget'].astype(int)
+films['year'] = pd.to_datetime(films['release_date']).dt.year
+
+# Analyse par année
+films_par_annee = films.groupby('year').size()
+films_par_annee.plot(kind='bar', figsize=(12, 6))
+plt.title('Nombre de films par année')
+plt.xlabel('Année')
+plt.ylabel('Nombre de films')
+plt.show()
+
+# Corrélation budget/revenu
+plt.scatter(films['budget'], films['revenue'])
+plt.title('Corrélation entre budget et revenu')
+plt.xlabel('Budget ($)')
+plt.ylabel('Revenu ($)')
+plt.show()
+
+# Top 10 des films les plus rentables
+films['profit'] = films['revenue'] - films['budget']
+top10 = films.nlargest(10, 'profit')[['title', 'profit']]
+print(top10)</code></pre>
+            </article>
+            
             <div class="cards-grid">
                 <div class="card">
                     <div class="card-header" style="border-top-color: #ff5722;">
                         <i class="fas fa-calculator"></i>
-                        <h3>Calculatrice</h3>
+                        <h3>Projet Calculatrice</h3>
                     </div>
                     <div class="card-body">
-                        <p>Créez une calculatrice simple en ligne de commande.</p>
-                        <a href="#" class="btn" style="background-color: #ff5722;">Voir le tutoriel</a>
+                        <p><strong>Objectifs :</strong></p>
+                        <ul>
+                            <li>Interface graphique avec Tkinter</li>
+                            <li>Opérations de base (+, -, *, /)</li>
+                            <li>Gestion des erreurs</li>
+                            <li>Historique des calculs</li>
+                        </ul>
+                        <a href="#" class="btn" style="background-color: #ff5722;">Voir le tutoriel complet</a>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-header" style="border-top-color: #4caf50;">
                         <i class="fas fa-tasks"></i>
-                        <h3>To-Do List</h3>
+                        <h3>Projet To-Do List</h3>
                     </div>
                     <div class="card-body">
-                        <p>Développez une application de liste de tâches.</p>
-                        <a href="#" class="btn" style="background-color: #4caf50;">Voir le tutoriel</a>
+                        <p><strong>Fonctionnalités :</strong></p>
+                        <ul>
+                            <li>Application web avec Flask</li>
+                            <li>Base de données SQLite</li>
+                            <li>CRUD complet (Create, Read, Update, Delete)</li>
+                            <li>Interface utilisateur responsive</li>
+                        </ul>
+                        <a href="#" class="btn" style="background-color: #4caf50;">Voir le tutoriel complet</a>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-header" style="border-top-color: #2196f3;">
                         <i class="fas fa-chart-line"></i>
-                        <h3>Analyse de données</h3>
+                        <h3>Projet Data Science</h3>
                     </div>
                     <div class="card-body">
-                        <p>Analysez des données avec Pandas et Matplotlib.</p>
-                        <a href="#" class="btn" style="background-color: #2196f3;">Voir le tutoriel</a>
+                        <p><strong>Technologies :</strong></p>
+                        <ul>
+                            <li>Pandas pour l'analyse</li>
+                            <li>Matplotlib/Seaborn pour la visualisation</li>
+                            <li>Scikit-learn pour le machine learning</li>
+                            <li>Jupyter Notebook pour le rapport</li>
+                        </ul>
+                        <a href="#" class="btn" style="background-color: #2196f3;">Voir le tutoriel complet</a>
                     </div>
                 </div>
             </div>
-
+            
             <div class="next-steps">
-                <h3><i class="fas fa-graduation-cap"></i> Pour aller plus loin</h3>
+                <h3><i class="fas fa-graduation-cap"></i> Pour Aller Plus Loin</h3>
                 <div class="resources-grid">
                     <a href="#" class="resource-card">
                         <i class="fab fa-youtube"></i>
-                        <span>Tutoriels vidéo</span>
+                        <span>Tutoriels Vidéo Complets</span>
+                        <p>50+ heures de contenu sur les projets avancés</p>
                     </a>
                     <a href="#" class="resource-card">
                         <i class="fas fa-book"></i>
-                        <span>Documentation officielle</span>
+                        <span>Documentation Officielle</span>
+                        <p>Guide complet de référence pour Python 3</p>
                     </a>
                     <a href="#" class="resource-card">
                         <i class="fas fa-laptop-code"></i>
-                        <span>Exercices pratiques</span>
+                        <span>Exercices Pratiques</span>
+                        <p>300+ exercices avec solutions détaillées</p>
+                    </a>
+                    <a href="#" class="resource-card">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>Projets Open Source</span>
+                        <p>Contribuez à des projets réels pour monter en compétences</p>
                     </a>
                 </div>
             </div>
@@ -455,10 +1202,14 @@ couleurs = {"rouge", "vert", "bleu"}</code></pre>
 
     <footer>
         <div class="container">
-            <p>🚀 CodeMaster - Apprendre Python Gratuitement 🚀</p>
-            <p>© 2025 Tous droits réservés</p>
+            <p>🚀 CodeMaster - Maîtrisez Python de A à Z 🚀</p>
+            <p>© 2025 Tous droits réservés - Version complète 5.0</p>
             <div class="social-links">
-
+                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
             </div>
         </div>
     </footer>
@@ -501,11 +1252,18 @@ couleurs = {"rouge", "vert", "bleu"}</code></pre>
             });
         }, { threshold: 0.1 });
 
-        document.querySelectorAll('.card, .chapter').forEach(el => {
+        document.querySelectorAll('.card, .chapter, .detailed-content').forEach(el => {
             el.style.opacity = 0;
             el.style.transform = 'translateY(20px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(el);
+        });
+
+        // Syntax highlighting for code blocks
+        document.querySelectorAll('pre code').forEach((block) => {
+            // In a real implementation, you would use a library like Prism.js or Highlight.js
+            // For this example, we'll just add a class
+            block.classList.add('hljs');
         });
     </script>
 </body>
